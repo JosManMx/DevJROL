@@ -1,0 +1,129 @@
+
+
+----------------------------------------------------------
+Lenguajes
+----------------------------------------------------------
+	Español 100%
+	Ingles 75%
+
+----------------------------------------------------------
+Conocimientos
+----------------------------------------------------------
+
+	Maquetado con HTML/CSS
+	Desarrollo de Plantillas en Email Marketing
+	Uso de Preprocesadores de lenguajes
+		Jade/pug	
+		SCSS/SASS
+		LESS
+	Lenguajes de programación
+		PHP
+		Javascript
+	Librerias
+		Jquery
+		AJAX
+		HammerJS
+	Frameworks
+		Bootstrap
+		MaterializeCSS
+		Vue
+		Foundation (Webs)
+		Material Design Lite (MDL)
+		EDgrid
+		VueMaterial
+		MJML
+		Foundation (Email)
+	Manejo de CMS
+		Wordpress
+			WooCommerce
+		Drupal
+		Joomla
+		Magento
+		OpenCart
+		OsCommerce
+	Posicionamiento en Buscador (SEO)
+	Interface de Usuario (UI)
+	Experiencia de Usuario (UX)
+	Base de Datos con MySQL
+	Control de Versiones
+		Git
+		BitBucket
+	Manejo de Software
+		Photoshop
+		Corel Draw
+
+
+----------------------------------------------------------
+Datos Personales
+----------------------------------------------------------
+Nombres: Jose Rafael
+Apellidos: Otero López
+C.I.: V-19.708.947
+Nacionalidad: Venezolano
+Estado Civil: Casado
+Edad: 25 Años
+Fecha de Nacimiento: 
+21 Agosto de 1991
+Telefonos: 
++58 0416 - 758.25.13
+
+
+----------------------------------------------------------
+POSIBLES
+----------------------------------------------------------
+	configuracion de VPS
+	manejo de APIs
+		Formularios
+		API google
+
+----------------------------------------------------------
+Experiencia
+----------------------------------------------------------
+
+
+
+----------------------------------------------------------
+Perfil (descripcion de mi)
+----------------------------------------------------------
+
+Teniendo una motivación previa diseñando plantillas HTML y CSS con Macromedia Dreamweaver en el año 2005 y con el Sistema de Gestion de Contenido (CMS) WordPress; inicié mis estudios informales y autodidactas en el area del desarrollo web, para posteriormente centrarme en el ámbito frontend desde el año 2013, ya al día de hoy manejo diversos frameworks para maquetacion y desarrollo visual en aplicaciones, correos y paginas web, asi como tambien librerias de codigo.
+
+Considero que siempre hay mas de una forma para realizar un objetivo, por lo que he tomado como norte elaborar y/o investigar la opción más óptima y profesional, eso me ha llevado a un ámplio hábito de la investigación y ha hecho que mis conocimientos sean integrales y mis practicas de codificacion cada vez más límpias.
+
+Soy amante de las diversas tecnologías y amo mis labores profesionales tomandolas muy en serio, aplicando las metodologías mas flexibles y óptimas, garantizando que pueda trabajar en equipos multidiciplinarios con un fin claro. 
+
+Una de los principales aprendizaje que he tenido trabajando como freelance es que la responsabilidad es tu marca personal y la perseverancia la mejor herramienta. Me gustan los proyectos arriesgados por que recuerdan que siempre hay algo nuevo que aprender.
+
+----------------------------------------------------------
+Educación
+----------------------------------------------------------
+
+
+----------------------------------------------------------
+Destreza/Expertise
+----------------------------------------------------------
+Amplio conocimientos sobre redaccion de contenidos debido a que soy escritor literario por hobby
+
+Busqueda de Contenido en la web; teniendo experiencia de mas de 15 años de manejo en internet
+
+Alta velocidad de transcripcion 56PPM (Palabra Por Minuto)  y 426CPM (Caracteres Por Minuto)
+
+Dominio en el Manejo de Sistemas Operativos como Linux y Windows
+
+Autodidacta, dinamico, proactivo, organizado y responsable.
+
+----------------------------------------------------------
+portafolio
+----------------------------------------------------------
+
+
+
+
+----------------------------------------------------------
+Referencias personales
+----------------------------------------------------------
+
+
+----------------------------------------------------------
+Certificaciones/Cursos/Talleres
+----------------------------------------------------------
