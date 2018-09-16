@@ -731,3 +731,14 @@ table {
     max-height: 15rem; } }
 
 /*# sourceMappingURL=styles.css.map */
+
+/*
+  Shaming Code 
+  (quick fixs: to refactor later)
+*/
+    .info{
+      width: 60% !important;
+    }
+/*
+  end shame code
+*/
