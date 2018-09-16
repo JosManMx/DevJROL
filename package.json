@@ -1,0 +1,36 @@
+{
+  "name": "devjrol",
+  "version": "1.0.0",
+  "description": "My personal curriculum",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "browser-sync start --server './docs' --files './docs'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosManMx/DevJROL.git"
+  },
+  "keywords": [
+    "cv",
+    "curriculum",
+    "jose",
+    "rafael",
+    "otero",
+    "lopez",
+    "web",
+    "developer"
+  ],
+  "author": "Rafael Otero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JosManMx/DevJROL/issues"
+  },
+  "homepage": "https://github.com/JosManMx/DevJROL#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.7"
+  }
+}
