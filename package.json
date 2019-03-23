@@ -31,6 +31,6 @@
   },
   "homepage": "https://github.com/JosManMx/DevJROL#readme",
   "devDependencies": {
-    "browser-sync": "^2.24.7"
+    "browser-sync": "^2.26.3"
   }
 }
