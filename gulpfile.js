@@ -22,8 +22,11 @@ const OPTIONS = {
 function css() {
   return src(OPTIONS.css.src)
     .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(sourcemaps.write())
+    .pipe(sass({
+      outputStyle: 'expanded',
+      sourceComments: true
+    }).on('error', sass.logError))
+    .pipe(sourcemaps.write('./'))
     .pipe(dest(OPTIONS.css.dist))
     .pipe(browserSync.stream());
 }
