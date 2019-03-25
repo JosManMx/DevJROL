@@ -1,0 +1,14 @@
+
+
+table {
+  color: #545454;
+  margin: 0 1rem 2rem 0
+}
+
+table th {
+  text-align: left
+}
+
+table tr:nth-child(odd) {
+  background-color: #ededed
+}

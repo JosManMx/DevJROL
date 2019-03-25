@@ -1,0 +1,61 @@
+.menu {
+  list-style-type: none;
+  line-height: 2rem;
+  padding: 0 3rem;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.menu a {
+  color: #ededed;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%
+}
+
+.menu a h3 {
+  color: #ededed;
+  border: 3px solid #ededed;
+  font-size: 1rem;
+  max-width: 18rem;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  margin: 0 0 0.5rem 0
+}
+
+.menu a h3:hover {
+  background-color: #ededed;
+  color: #545454
+}
+
+.menu a h3:active {
+  background-color: #bababa
+}
+
+.icon.icon-x {
+  color: #ededed;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  cursor: pointer
+}
+

@@ -1,0 +1,9 @@
+.certification>.row:nth-child(2) {
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start
+}
+
+.certification>.row:nth-child(2)>table {
+  width: 47.5%
+}
