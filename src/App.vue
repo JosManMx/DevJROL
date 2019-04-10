@@ -3,7 +3,9 @@
     <navigation class="navigation"></navigation>
     <header-app></header-app>
     <div class="view">
-      <introduction></introduction>
+      <transition name="fade" mode="out-in">
+        <router-view></router-view>
+      </transition>
     </div>
   </main>
 </template>
@@ -86,5 +88,13 @@ hr {
     margin-bottom: 40px;
     padding-bottom: 3px;
   }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>
