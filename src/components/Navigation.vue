@@ -1,7 +1,8 @@
 <template>
-  <nav>
+  <nav class="navigation">
     <div class="profile-img">
-      <img class="img" src="https://fakeimg.pl/221" alt>
+      <!-- <img class="img" src="https://fakeimg.pl/220x270" alt> -->
+      <img class="img" src="../assets/avatar-j-rafael-otero2.jpg" alt>
     </div>
     <ul class="menu">
       <!-- <li v-for="item in menuItems"> -->
@@ -60,13 +61,22 @@ export default {
 </script>
 
 <style lang="scss">
+.navigation {
+  position: fixed;
+  top: 0;
+  min-height: 100vh;
+  background: var(--brown);
+  z-index: 2;
+  max-width: var(--left-column-width);
+}
 .profile-img {
-  padding: 0 20px;
-  min-height: 340px;
+  padding: 20px 20px 0;
+  min-height: 315px;
   display: flex;
   align-items: center;
   .img {
     border-radius: 5px;
+    max-width: 100%;
   }
 }
 .menu {

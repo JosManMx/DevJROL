@@ -1,6 +1,6 @@
 <template>
   <main class="main" id="app">
-    <navigation class="navigation"></navigation>
+    <navigation></navigation>
     <header-app></header-app>
     <div class="view">
       <transition name="fade" mode="out-in">
@@ -59,13 +59,7 @@ hr {
   max-width: var(--max-width-containers);
   margin: auto;
 }
-.navigation {
-  position: fixed;
-  top: 0;
-  min-height: 100vh;
-  background: var(--brown);
-  z-index: 2;
-}
+
 .view {
   margin-left: var(--left-column-width);
   margin-top: 340px;
@@ -83,10 +77,18 @@ hr {
     text-align: right;
     color: var(--brown);
     text-transform: uppercase;
-    border-bottom: 1px solid var(--brown);
-    margin-top: 0;
-    margin-bottom: 40px;
+    margin: 0 -28.8px 40px 0;
     padding-bottom: 3px;
+    margin-right: -28.8px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: calc(100% - 28.8px);
+      bottom: 0;
+      left: 0;
+      border-bottom: 1px solid var(--brown);
+    }
   }
 }
 
