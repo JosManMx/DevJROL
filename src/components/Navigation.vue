@@ -21,7 +21,7 @@ export default {
       items: [
         {
           key: 1,
-          name: "Introduction",
+          name: "Introducción",
           url: "/"
         },
         {

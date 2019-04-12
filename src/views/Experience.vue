@@ -70,8 +70,11 @@ export default {
 .experience {
   display: flex;
   padding-bottom: 13px;
-  border-bottom: 1px solid var(--brown);
+  border-bottom: 1px solid var(--brown-light);
   margin-bottom: 13px;
+  &-info {
+    margin-right: 15px;
+  }
 
   &-company,
   &-position,
@@ -83,6 +86,9 @@ export default {
     line-height: 1.19;
     letter-spacing: normal;
     color: var(--brown);
+  }
+  &-tech {
+    margin-top: 2rem;
   }
 }
 </style>
