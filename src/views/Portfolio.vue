@@ -3,7 +3,7 @@
     <h2 class="section-title">{{title}}</h2>
     <div class="section-content">
       <div class="portfolios">
-        <div v-for="portfolio in portfolios" :key="portfolio.key" class="portfolio">
+        <div v-for="(portfolio, key) in portfolios" :key="key" class="portfolio">
           <a :href="portfolio.url" target="_blank">
             <span class="portfolio-description">{{portfolio.description}}</span>
             <div class="portfolio-image">

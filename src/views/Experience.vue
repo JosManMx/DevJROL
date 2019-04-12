@@ -2,7 +2,7 @@
   <section class="section">
     <h2 class="section-title">{{title}}</h2>
     <div class="section-content">
-      <div class="experience" v-for="experience in experiences" :key="experience.key">
+      <div class="experience" v-for="(experience, key) in experiences" :key="key">
         <div class="experience-info">
           <p class="experience-company">
             <b>Empresa/Organización:</b>

@@ -3,7 +3,7 @@
     <h2 class="section-title">{{title}}</h2>
     <div class="section-content">
       <div class="languages">
-        <div v-for="language in languages" :key="language.key" class="language">
+        <div v-for="(language, key) in languages" :key="key" class="language">
           <p class="language-label">{{language.label}}</p>
           <progress-bar
             class="language-chart"

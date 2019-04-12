@@ -5,8 +5,7 @@
       <img class="img" src="../assets/avatar-j-rafael-otero2.jpg" alt>
     </div>
     <ul class="menu">
-      <!-- <li v-for="item in menuItems"> -->
-      <li class="menu-item" :key="item.key" v-for="item in items">
+      <li class="menu-item" :key="key" v-for="(item, key) in items">
         <router-link class="menu-link" active-class="active" :to="item.url" exact>{{ item.name }}</router-link>
       </li>
     </ul>
