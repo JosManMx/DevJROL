@@ -35,8 +35,8 @@ export default {
   --brown-light: #ededed;
 
   // Sizes
-  --left-column-width: 261px;
-  --max-width-containers: 1024px;
+  --left-column-width: 291px;
+  --max-width-containers: 1134px;
 }
 html,
 body {
@@ -52,7 +52,7 @@ h1 {
 
 hr {
   color: var(--brown);
-  border-width: 2px;
+  border-width: 2px 0 0;
   margin: 15px 0;
 }
 .main {
@@ -65,7 +65,6 @@ hr {
   margin-top: 340px;
 }
 .section {
-  padding: 30px;
   &-title {
     font-family: "Nova Square";
     font-size: 24px;

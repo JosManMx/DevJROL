@@ -59,6 +59,7 @@ export default {
   top: 20px;
   left: 0;
   width: 100%;
+  z-index: 1;
   &::before {
     content: "";
     background-color: #fff;
@@ -73,9 +74,8 @@ export default {
   }
   &-content {
     text-align: center;
-    max-width: calc(var(--max-width-containers) - var(--left-column-width));
-    margin-left: auto;
-    padding: 50px 30px;
+    margin-left: var(--left-column-width);
+    padding: 50px 0;
     box-sizing: border-box;
   }
 }

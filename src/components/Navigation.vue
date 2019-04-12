@@ -67,7 +67,7 @@ export default {
   min-height: 100vh;
   background: var(--brown);
   z-index: 2;
-  max-width: var(--left-column-width);
+  padding: 0;
 }
 .profile-img {
   padding: 20px 20px 0;
