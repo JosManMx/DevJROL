@@ -1,8 +1,8 @@
 {
-  "name": "devjrol",
+  "name": "devjrafaelotero",
   "description": "My personal Web-Curriculum",
-  "version": "1.0.0",
-  "author": "Rafael Otero <josmanmx@hotmail.com>",
+  "version": "2.0.0",
+  "author": "Rafael Otero <hola@jostech.com.ve>",
   "license": "MIT",
   "private": true,
   "scripts": {
