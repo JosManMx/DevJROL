@@ -1,0 +1,48 @@
+.name {
+  background-color: #ededed;
+  padding: 1rem;
+  margin: auto
+}
+
+.name .avatar-mobile {
+  text-align: center
+}
+
+
+.social_list {
+  padding-left: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.social_list_item {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0.2rem 0.3rem
+}
+
+.social_list_item a {
+  text-decoration: none;
+  font-size: 1.5rem
+}
+
+@include mq(large){
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%
+  }
+  header section {
+    max-width: 1024px;
+    margin: auto
+  }
+  header section>* {
+    margin-left: 20rem
+  }
+}

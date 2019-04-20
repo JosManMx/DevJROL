@@ -1,0 +1,27 @@
+.avatar-desktop img,
+.avatar-mobile img {
+  border-radius: 50%;
+  max-width: 270px
+}
+
+
+.avatar-desktop {
+  display: none
+}
+
+.avatar-desktop img {
+  max-width: 90%
+}
+@include mq(large){
+  .avatar-mobile {
+    display: none
+  }
+  .avatar-desktop {
+    display: block;
+    text-align: center;
+    padding-top: 1.5rem
+  }
+  .avatar-desktop img {
+      width: 185px
+  }
+}

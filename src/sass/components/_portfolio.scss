@@ -1,0 +1,34 @@
+.portfolio_item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding-bottom: 1rem;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%
+}
+
+.portfolio_div_img {
+  max-width: 150px;
+  max-height: 200px;
+  overflow: hidden;
+  width: 30%
+}
+
+.portfolio_img {
+  max-width: 150px;
+  height: auto
+}
+
+.portfolio_description {
+  margin-left: 1%;
+  width: 70%;
+  box-sizing: border-box
+}
