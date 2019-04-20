@@ -1,27 +1,90 @@
 <template>
-  <div class="container">
+  <section class="section">
+    <h2 class="section-title">{{title}}</h2>
     <vue-tabs>
-      <v-tab title="Front-end" icon="icon icon-eye">First tab content</v-tab>
+      <v-tab title="Front-end" icon="icon icon-eye">
+        <div v-for="(knowledge, key) in KNOWLEDGES.frontend" :key="key" class="knowledge">
+          <p class="knowledge-label">{{knowledge.name}}</p>
+          <progress-bar class="knowledge-chart" :options="chartsStyles" :value="knowledge.level"/>
+          <p class="knowledge-percentage">{{knowledge.level}}%</p>
+        </div>
+      </v-tab>
 
-      <v-tab title="Back-end" icon="icon icon-database">Second tab content</v-tab>
+      <v-tab title="Back-end" icon="icon icon-database">
+        <div v-for="(knowledge, key) in KNOWLEDGES.backend" :key="key" class="knowledge">
+          <p class="knowledge-label">{{knowledge.name}}</p>
+          <progress-bar class="knowledge-chart" :options="chartsStyles" :value="knowledge.level"/>
+          <p class="knowledge-percentage">{{knowledge.level}}%</p>
+        </div>
+      </v-tab>
 
-      <v-tab title="Sys-Admin" icon="icon icon-server">Second tab content</v-tab>
+      <v-tab title="Sys-Admin" icon="icon icon-server">
+        <div v-for="(knowledge, key) in KNOWLEDGES.sysadmin" :key="key" class="knowledge">
+          <p class="knowledge-label">{{knowledge.name}}</p>
+          <progress-bar class="knowledge-chart" :options="chartsStyles" :value="knowledge.level"/>
+          <p class="knowledge-percentage">{{knowledge.level}}%</p>
+        </div>
+      </v-tab>
 
-      <v-tab title="CMS" icon="icon icon-chalkboard">CMS tab content</v-tab>
+      <v-tab title="CMS" icon="icon icon-chalkboard">
+        <div v-for="(knowledge, key) in KNOWLEDGES.cms" :key="key" class="knowledge">
+          <p class="knowledge-label">{{knowledge.name}}</p>
+          <progress-bar class="knowledge-chart" :options="chartsStyles" :value="knowledge.level"/>
+          <p class="knowledge-percentage">{{knowledge.level}}%</p>
+        </div>
+      </v-tab>
 
-      <v-tab title="Otros" icon="icon icon-coffee">Other tab content</v-tab>
+      <v-tab title="Varios" icon="icon icon-coffee">
+        <div v-for="(knowledge, key) in KNOWLEDGES.various" :key="key" class="knowledge">
+          <p class="knowledge-label">{{knowledge.name}}</p>
+          <progress-bar class="knowledge-chart" :options="chartsStyles" :value="knowledge.level"/>
+          <p class="knowledge-percentage">{{knowledge.level}}%</p>
+        </div>
+      </v-tab>
     </vue-tabs>
-  </div>
+  </section>
 </template>
 
 <script>
 import { VueTabs, VTab } from "vue-nav-tabs";
+import { KNOWLEDGES } from "../data/knowledges.js";
 
 export default {
   name: "knowlegdes",
   components: {
     VueTabs,
     VTab
+  },
+  data() {
+    return {
+      title: "Conocimientos",
+      chartsStyles: {
+        text: {
+          color: "var(--brown)",
+          shadowEnable: false,
+          shadowColor: "transparent",
+          fontSize: 14,
+          fontFamily: "Lato",
+          dynamicPosition: false,
+          hideText: false
+        },
+        progress: {
+          color: "var(--brown)",
+          backgroundColor: "var(--white)"
+        },
+        layout: {
+          height: 25,
+          width: 800,
+          verticalTextAlign: 150,
+          horizontalTextAlign: 48.5,
+          zeroOffset: 0,
+          strokeWidth: 25,
+          progressPadding: 0,
+          type: "line"
+        }
+      },
+      KNOWLEDGES
+    };
   }
 };
 </script>
@@ -105,6 +168,13 @@ export default {
       border: 1px solid var(--brown);
       border-width: 1px 1px 0 0;
       background-color: var(--white);
+      background: linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 49%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 1) 100%
+      );
       position: absolute;
       bottom: -47px;
       transform: rotate(-45deg);
@@ -117,5 +187,44 @@ export default {
   height: 50vh;
   margin-bottom: 50px;
   padding: 20px;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 11px;
+  }
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px var(--brown-light);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--brown);
+    outline: 1px solid var(--brown-light);
+    border-radius: 5px;
+  }
+}
+
+.knowledge {
+  margin-bottom: 30px;
+  &-label {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 18px;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--brown);
+    margin: 0 0 14px 0;
+  }
+  &-chart {
+    border: 1px solid var(--brown);
+    height: 25px;
+  }
+  &-percentage {
+    margin: 0;
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+  }
 }
 </style>

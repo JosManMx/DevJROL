@@ -44,6 +44,18 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px var(--brown-light);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--brown);
+    outline: 1px solid var(--brown-light);
+    border-radius: 5px;
+  }
 }
 
 h1 {
