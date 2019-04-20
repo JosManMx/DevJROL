@@ -1,0 +1,12 @@
+.button {
+  font-size: 2rem;
+  text-align: right;
+  cursor: pointer;
+  color: #545454
+}
+
+@include mq(large){
+  .button {
+    display: none
+  }
+}

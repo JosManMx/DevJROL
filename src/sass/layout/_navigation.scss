@@ -1,0 +1,38 @@
+nav {
+  background-color: #545454;
+  height: 100vh;
+  min-height: 700px;
+  position: fixed;
+  left: -100%;
+  width: 100%;
+  top: 0;
+  z-index: 30;
+  transition: all .4s;
+  @include mq(large){
+    position: static;
+    min-height: 55rem;
+    z-index: 30;
+    margin-top: -270px;
+    transition: all .4s;
+    -webkit-flex-basis: 18rem;
+    -ms-flex-preferred-size: 18rem;
+    flex-basis: 18rem;
+    background: linear-gradient(to bottom, #545454 90%, rgba(84, 84, 84, 0) 100%);
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    .menu {
+      display: block;
+      margin-top: 0px;
+      margin-bottom: 0;
+      padding: 0.5rem 1.2rem;
+      height: auto;
+      h3 {
+      margin: 0.2rem 0.5rem;
+      line-height: 1.5rem
+      }
+    }
+    .icon.icon-x {
+      display: none
+    }
+  }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+  <head lang="es">
+    <title>Dev J Rafael Otero</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Nova+Mono" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="icons/styles.css" type="text/css">
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="bglogo icon icon-lang"></div>
+      <div class="page">
+        <div class="fade"></div>
+        <header>
+          <section class="panel row">
+            <div class="colors">&#160;</div>
+          </section>
+          <div class="name">
+            <section>
+              <h1>José Rafael Otero Lopez</h1>
+              <h3 class="text-center">Desarrollador web Frontend</h3>
+              <hr>
+              <div class="social">
+                <ul class="social_list">
+                  <li class="social_list_item"><a href="https://twitter.com/JosManMx">
+                      <div class="icon icon-twitter"> </div>
+                    </a></li>
+                  <li class="social_list_item"> <a href="https://www.facebook.com/j.rafaeloterolopez">
+                      <div class="icon icon-facebook"></div>
+                    </a></li>
+                  <li class="social_list_item"> <a href="https://ve.linkedin.com/in/jrafaeloterolopez">
+                      <div class="icon icon-linkedin"></div>
+                    </a></li>
+                  <li class="social_list_item"> <a href="mailto:DevJRafaelOteroLopez@outlook.com">
+                      <div class="icon icon-mail"></div>
+                    </a></li>
+                  <li class="social_list_item"> <a href="https://telegram.me/josmanmx">
+                      <div class="icon icon-telegram"></div>
+                    </a></li>
+                  <li class="social_list_item"> <a href="https://github.com/JosManMx">
+                      <div class="icon icon-github"></div>
+                    </a></li>
+                </ul>
+              </div>
+              <div class="avatar-mobile"><img src="img/avatar.png" alt=""></div>
+              <div class="icon icon-menu button show-nav"></div>
+            </section>
+          </div>
+        </header>
+        <div class="content">
+          <nav>
+            <div class="wrapper">
+              <div class="icon icon-x"></div>
+              <div class="avatar-desktop"><img src="img/avatar.png" alt=""></div>
+              <ul class="menu">
+                <li>
+                  <router-link to="/">
+                    <h3>Perfil</h3>
+                  </router-link>
+                </li>
+                <li>
+                  <router-link to="/datos-personales">
+                    <h3>Datos Personales</h3>
+                  </router-link>
+                </li>
+                <li>
+                  <router-link to="/experiencia">
+                    <h3>Experiencia</h3>
+                  </router-link>
+                </li>
+                <li>
+                  <router-link to="/conocimientos">
+                    <h3>Conocimientos</h3>
+                  </router-link>
+                </li>
+                <li>
+                  <router-link to="/idiomas">
+                    <h3>Idiomas</h3>
+                  </router-link>
+                  </a>
+                </li>
+                <li>
+                  <router-link to="/expertise">
+                    <h3>Destreza/Expertise</h3>
+                  </router-link>
+                </li>
+                <li>
+                  <router-link to="/portafolio">
+                    <h3>Portafolio</h3>
+                  </router-link>
+                </li>
+                <li>
+                  <router-link to="/certificaciones">
+                    <h3>Certificaciones</h3>
+                  </router-link>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <router-view class="info"></router-view>
+          <div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- #app -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+
+
+    <!-- Vue files -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END Vue files -->
+
+
+  </body>
+
+</html>
