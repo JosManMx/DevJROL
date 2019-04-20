@@ -10,6 +10,7 @@ import Portfolio from '../views/Portfolio'
 import Certifications from '../views/Certifications'
 import Awards from '../views/Awards'
 import Knowledges from '../views/Knowledges'
+import Error404 from '../views/error404'
 
 Vue.use(Router)
 
@@ -55,6 +56,11 @@ export default new Router({
       path: '/conocimientos',
       name: 'knowledges',
       component: Knowledges
+    },
+    {
+      path: '*',
+      name: 'error404',
+      component: Error404
     },
   ]
 })
