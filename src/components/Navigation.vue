@@ -52,6 +52,11 @@ export default {
           key: 7,
           name: "Reconocimientos",
           url: "reconocimientos"
+        },
+        {
+          key: 8,
+          name: "Conocimientos",
+          url: "conocimientos"
         }
       ]
     };

@@ -9,6 +9,7 @@ import Languages from '../views/Languages'
 import Portfolio from '../views/Portfolio'
 import Certifications from '../views/Certifications'
 import Awards from '../views/Awards'
+import Knowledges from '../views/Knowledges'
 
 Vue.use(Router)
 
@@ -50,6 +51,10 @@ export default new Router({
       name: 'Awards',
       component: Awards
     },
-
+    {
+      path: '/conocimientos',
+      name: 'knowledges',
+      component: Knowledges
+    },
   ]
 })
