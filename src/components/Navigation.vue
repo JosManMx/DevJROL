@@ -75,12 +75,13 @@ export default {
 }
 .profile-img {
   padding: 20px 20px 0;
-  min-height: 315px;
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
   .img {
     border-radius: 5px;
-    max-width: 100%;
+    max-width: 90%;
+    margin: auto;
   }
 }
 .menu {
@@ -89,13 +90,13 @@ export default {
   list-style-type: none;
   text-align: center;
   &-item {
-    margin-bottom: 7px;
+    margin-bottom: 5px;
   }
   &-link {
     color: var(--brown-light);
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: normal;
     line-height: 1.2;
     letter-spacing: normal;

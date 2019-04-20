@@ -74,7 +74,7 @@ hr {
 
 .view {
   margin-left: var(--left-column-width);
-  margin-top: 340px;
+  margin-top: 300px;
 }
 .section {
   &-title {

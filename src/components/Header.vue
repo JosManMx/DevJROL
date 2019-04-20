@@ -75,7 +75,7 @@ export default {
   &-content {
     text-align: center;
     margin-left: var(--left-column-width);
-    padding: 50px 0;
+    padding: 20px 0;
     box-sizing: border-box;
   }
 }
