@@ -6,9 +6,10 @@
         <div v-for="(portfolio, key) in portfolios" :key="key" class="portfolio">
           <a :href="portfolio.url" target="_blank">
             <span class="portfolio-description">{{portfolio.description}}</span>
-            <div class="portfolio-image">
-              <img :src="portfolios" :alt="portfolio.description">
-            </div>
+            <figure class="portfolio-image">
+              <img :src="portfolio.image" :alt="portfolio.description">
+              <figcaption>{{portfolio.caption}}</figcaption>
+            </figure>
           </a>
         </div>
       </div>
@@ -26,13 +27,14 @@ export default {
         {
           description: "En Behance",
           url: "https://www.behance.net/jostechs",
-          // FIXME no carga las imagenes como debería
-          image: "../assets/avatar-j-rafael-otero.jpg"
+          image: "/src/assets/portfolio/behance-logo.png",
+          caption: "Diseños realizados"
         },
         {
           description: "En JosTechS",
           url: "https://jostech.com.ve/portafolio",
-          image: "/assets/portfolio/jostech-isotipo.svg"
+          image: "/src/assets/portfolio/jostech-logotipo-isotipo.png",
+          caption: "Webs, Apps, E-commerces..."
         }
       ]
     };
