@@ -19,44 +19,36 @@ export default {
     return {
       items: [
         {
-          key: 1,
           name: "Introducción",
           url: "/"
         },
         {
-          key: 2,
           name: "Datos Personales",
           url: "datos-personales"
         },
         {
-          key: 3,
           name: "Experiencia",
           url: "experiencia"
         },
         {
-          key: 4,
-          name: "Idiomas",
-          url: "idiomas"
+          name: "Conocimientos",
+          url: "conocimientos"
         },
         {
-          key: 5,
           name: "Portafolio",
           url: "portafolio"
         },
         {
-          key: 6,
+          name: "Idiomas",
+          url: "idiomas"
+        },
+        {
           name: "Certificaciones",
           url: "certificaciones"
         },
         {
-          key: 7,
           name: "Reconocimientos",
           url: "reconocimientos"
-        },
-        {
-          key: 8,
-          name: "Conocimientos",
-          url: "conocimientos"
         }
       ]
     };

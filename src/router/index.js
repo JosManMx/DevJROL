@@ -43,6 +43,11 @@ export default new Router({
       component: Portfolio
     },
     {
+      path: '/conocimientos',
+      name: 'knowledges',
+      component: Knowledges
+    },
+    {
       path: '/certificaciones',
       name: 'Certifications',
       component: Certifications
@@ -51,11 +56,6 @@ export default new Router({
       path: '/reconocimientos',
       name: 'Awards',
       component: Awards
-    },
-    {
-      path: '/conocimientos',
-      name: 'knowledges',
-      component: Knowledges
     },
     {
       path: '*',

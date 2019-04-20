@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="experience-logo">
-          <img src="https://fakeimg.pl/400x200" alt>
+          <img :src="experience.image" alt>
         </div>
       </div>
     </div>
@@ -44,21 +44,24 @@ export default {
           position: "Desarrollador web",
           duration: "Octubre 2018 - Abril 2019 (7 meses)",
           technologies:
-            "HTML, CSS, JavaScript, Jquery, PHP, PHP-Symfony, Prestashop, Git, MySQL"
+            "HTML, CSS, JavaScript, Jquery, PHP, PHP-Symfony, Prestashop, Git, MySQL",
+          image: "/src/assets/experiences/lineagrafica.jpg"
         },
         {
           company: "JosTechS - Soluciones Tecnológicas",
           position: "CEO / Founder",
           duration: "Febrero 2014 - actualidad (5 años y 3 meses)",
           technologies:
-            "HTML, CSS, JavaScript, Jquery, PHP, PHP-Symfony, Prestashop, Git, MySQL"
+            "HTML, CSS, JavaScript, Jquery, PHP, PHP-Symfony, Prestashop, Git, MySQL",
+          image: "/src/assets/experiences/jostech.png"
         },
         {
           company: "Oteroweb",
           position: "Desarrollador web Front-End",
           duration: "Junio 2016 - Noviembre 2017 (1 año 6 meses)",
           technologies:
-            "HTML, CSS, JavaScript, Jquery, PHP, PHP-Symfony, Prestashop, Git, MySQL"
+            "HTML, CSS, JavaScript, Jquery, PHP, PHP-Symfony, Prestashop, Git, MySQL",
+          image: "/src/assets/experiences/oteroweb.png"
         }
       ]
     };
@@ -89,6 +92,12 @@ export default {
   }
   &-tech {
     margin-top: 2rem;
+  }
+  &-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
   }
 }
 </style>
