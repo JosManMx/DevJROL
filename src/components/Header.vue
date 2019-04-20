@@ -13,12 +13,28 @@
             </div>
           </div>
           <div class="social-row">
-            <a href="#" class="social-icon socicon-facebook"></a>
-            <a href="#" class="social-icon socicon-twitter"></a>
-            <a href="#" class="social-icon socicon-linkedin"></a>
-            <a href="#" class="social-icon socicon-mail"></a>
-            <a href="#" class="social-icon socicon-telegram"></a>
-            <a href="#" class="social-icon socicon-github"></a>
+            <a
+              href="https://facebook.com/j.rafaelotero"
+              target="_blank"
+              class="social-icon socicon-facebook"
+            ></a>
+            <a
+              href="https://twitter.com/JosManMx"
+              class="social-icon socicon-twitter"
+              target="_blank"
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/rafael-otero/"
+              class="social-icon socicon-linkedin"
+              target="_blank"
+            ></a>
+            <a href="mailto:hola@jostech.com.ve" class="social-icon socicon-mail" target="_blank"></a>
+            <a href="https://t.me/jostechs" class="social-icon socicon-telegram" target="_blank"></a>
+            <a
+              href="https://github.com/JosManMx"
+              class="social-icon socicon-github"
+              target="_blank"
+            ></a>
           </div>
         </div>
       </div>
