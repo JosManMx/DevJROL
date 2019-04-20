@@ -187,6 +187,9 @@ export default {
       height: 130px;
       max-width: 165px;
     }
+    .VueCarousel-navigation-button {
+      color: var(--brown);
+    }
   }
   &-definitions {
     margin: 0;
