@@ -13,7 +13,7 @@
             <i class="collapse-arrow"></i>
           </header>
           <div class="certification-info">
-            <a :href="certification.url" class="certification-link">Ver Certificado</a>
+            <a :href="certification.url" target="_blank" class="certification-link">Ver Certificado</a>
             <div class="certification-acreditator">
               <b>Emisor:</b>
               {{certification.acreditator}}
