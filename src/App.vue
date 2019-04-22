@@ -144,7 +144,24 @@ hr {
     }
   }
 }
-
+.menu-button {
+  svg {
+    width: 20px;
+    cursor: pointer;
+    path {
+      fill: var(--brown);
+    }
+  }
+  &.close {
+    margin: 1rem 1rem 0 0;
+    svg path {
+      fill: var(--white);
+    }
+  }
+  @include bp-up($xs) {
+    display: none;
+  }
+}
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.3s;
