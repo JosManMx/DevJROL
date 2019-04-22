@@ -168,7 +168,6 @@ export default {
     justify-content: center;
     .whatsapp-number {
       font-family: "Lato";
-      font-size: 24px;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
@@ -190,6 +189,9 @@ export default {
       margin-right: 20px;
     }
     &-whatsapp {
+      .whatsapp-number {
+        font-size: 24px;
+      }
     }
   }
 }
