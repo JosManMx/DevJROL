@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="experience-logo">
-          <img :src="experience.image" alt>
+          <img class="img" :src="experience.image" :alt="experience.company">
         </div>
       </div>
     </div>
@@ -70,11 +70,14 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../sass/abstracts/variables";
+@import "../sass/abstracts/mixins";
 .experience {
   display: flex;
   padding-bottom: 13px;
   border-bottom: 1px solid var(--brown-light);
   margin-bottom: 13px;
+  flex-direction: column-reverse;
   &-info {
     margin-right: 15px;
   }
@@ -90,14 +93,24 @@ export default {
     letter-spacing: normal;
     color: var(--brown);
   }
-  &-tech {
-    margin-top: 2rem;
-  }
   &-logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    width: auto;
+    margin-bottom: 30px;
+    .img {
+      max-width: 100%;
+    }
+  }
+  @include bp-up($xs) {
+    flex-direction: row;
+    &-logo {
+      margin: auto;
+    }
+    &-tech {
+      margin-top: 2rem;
+    }
   }
 }
 </style>

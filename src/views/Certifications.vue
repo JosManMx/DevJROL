@@ -13,7 +13,7 @@
             <i class="collapse-arrow"></i>
           </header>
           <div class="certification-info">
-            <a :href="certification.url" class="certification-link">Ver Certificado</a>
+            <a :href="certification.url" target="_blank" class="certification-link">Ver Certificado</a>
             <div class="certification-acreditator">
               <b>Emisor:</b>
               {{certification.acreditator}}
@@ -53,6 +53,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../sass/abstracts/variables";
+@import "../sass/abstracts/mixins";
+
 .certification {
   margin-bottom: 20px;
   &-header {
@@ -72,23 +75,29 @@ export default {
   .collapse-arrow {
   }
   &-info {
+    display: flex;
+    flex-direction: column-reverse;
     padding: 20px;
     background: var(--brown-light);
     overflow: hidden;
     transition: height 0.3s, padding 0.3s;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    @include bp-up($xs) {
+      display: block;
+    }
   }
   &-link {
     // Container
     padding: 8px 35px;
     background: #fff;
     border: 1px solid var(--brown);
+    margin-top: 1rem;
     // Text
     font-size: 18px;
     font-weight: normal;
     line-height: 1;
-    text-align: left;
+    text-align: center;
     color: var(--brown);
     text-decoration: none;
     // Position

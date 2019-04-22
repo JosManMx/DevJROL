@@ -2,6 +2,25 @@
   <header class="header">
     <div class="header-container">
       <div class="header-content">
+        <div class="menu-toggle">
+          <span @click="$emit('menu-toggle')" class="menu-button">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="bars"
+              class="svg-inline--fa fa-bars fa-w-14"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="currentColor"
+                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+              ></path>
+            </svg>
+          </span>
+        </div>
         <h1 class="profile-name">{{profileName}}</h1>
         <p class="profile-profession">{{ profileProfession }}</p>
         <hr>
@@ -69,58 +88,77 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../sass/abstracts/variables";
+@import "../sass/abstracts/_mixins.scss";
+
 .header {
-  position: fixed;
   background-color: var(--brown-light);
   top: 20px;
   left: 0;
   width: 100%;
   z-index: 1;
-  &::before {
-    content: "";
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    height: 20px;
-    width: 100%;
-  }
+  margin-bottom: 20px;
+
   &-container {
     max-width: var(--max-width-containers);
     margin: auto;
   }
   &-content {
     text-align: center;
-    margin-left: var(--left-column-width);
-    padding: 20px 0;
+    padding: 20px;
     box-sizing: border-box;
+  }
+  @include bp-up($xs) {
+    position: fixed;
+    &::before {
+      content: "";
+      background-color: #fff;
+      position: fixed;
+      top: 0;
+      height: 20px;
+      width: 100%;
+    }
+    &-content {
+      padding: 20px 0;
+      margin-left: var(--left-column-width);
+    }
   }
 }
 .profile {
   &-name {
     margin: 0;
+    font-size: 24px;
     font-family: "Nova Square";
-    font-size: 40px;
     font-weight: normal;
     letter-spacing: normal;
     color: var(--brown);
-    margin-bottom: 10px;
   }
   &-profession {
     font-family: "Nova Square";
-    font-size: 32px;
+    font-size: 18px;
     font-weight: normal;
     line-height: 1.22;
     letter-spacing: normal;
     text-align: center;
     color: var(--brown);
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+  }
+  @include bp-up($xs) {
+    &-name {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    &-profession {
+      margin-bottom: 15px;
+      font-size: 32px;
+    }
   }
 }
 .social {
   &-icon {
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
     border-radius: 5px;
     background-color: var(--brown);
     display: inline-flex;
@@ -128,8 +166,8 @@ export default {
     align-items: center;
     color: #fff;
     text-decoration: none;
-    font-size: 24px;
-    margin-right: 20px;
+    font-size: 20px;
+    margin-right: 10px;
     transition: color 0.3s ease-out, background-color 0.3s ease-out;
     &:last-child {
       margin-right: 0;
@@ -146,7 +184,6 @@ export default {
     justify-content: center;
     .whatsapp-number {
       font-family: "Lato";
-      font-size: 24px;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
@@ -160,5 +197,22 @@ export default {
       margin-right: 5px;
     }
   }
+  @include bp-up($xs) {
+    &-icon {
+      width: 36px;
+      height: 36px;
+      font-size: 24px;
+      margin-right: 20px;
+    }
+    &-whatsapp {
+      .whatsapp-number {
+        font-size: 24px;
+      }
+    }
+  }
+}
+.menu-toggle {
+  display: flex;
+  justify-content: flex-end;
 }
 </style>

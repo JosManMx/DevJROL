@@ -137,8 +137,10 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../sass/abstracts/variables";
+@import "../sass/abstracts/mixins";
+
 .adward {
-  display: grid;
   grid-template-areas:
     "image title"
     "image data"
@@ -171,14 +173,13 @@ export default {
   }
   &-data {
     grid-area: data;
+    margin-bottom: 2rem;
   }
   &-gallery {
     grid-area: gallery;
     margin-bottom: 50px;
     padding: 0 20px;
-    .gallery-thumbnail {
-      margin-right: 30px;
-    }
+
     .gallery-thumbnail,
     .image {
       background-size: cover;
@@ -221,6 +222,14 @@ export default {
     letter-spacing: normal;
     text-align: left;
     color: var(--brown);
+  }
+  @include bp-up($xs) {
+    display: grid;
+    &-gallery {
+      .gallery-thumbnail {
+        margin-right: 30px;
+      }
+    }
   }
 }
 </style>
