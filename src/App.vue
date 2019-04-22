@@ -29,7 +29,7 @@ export default {
   },
   methods: {
     menuToggle: function() {
-      if (screen.width < 800) {
+      if (screen.width < 801 || window.innerWidth < 801) {
         this.menuIsShow = !this.menuIsShow;
         let body = document.querySelector("body");
         if (body.className == "") {
