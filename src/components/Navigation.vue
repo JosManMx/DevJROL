@@ -81,14 +81,13 @@ export default {
   position: fixed;
   top: 0;
   right: 100%;
-  min-height: 700px;
+  min-height: 100vh;
   min-width: var(--left-column-width);
   background: var(--brown);
   z-index: 2;
   padding: 0;
   @include bp-up($xs) {
     right: auto;
-    min-height: 100vh;
   }
 }
 .profile-img {

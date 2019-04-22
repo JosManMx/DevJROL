@@ -29,7 +29,7 @@ export default {
   },
   methods: {
     menuToggle: function() {
-      if (screen.width < 768) {
+      if (screen.width < 800) {
         this.menuIsShow = !this.menuIsShow;
         let body = document.querySelector("body");
         if (body.className == "") {
@@ -63,6 +63,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  min-height: 100vh;
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
 
@@ -102,6 +103,7 @@ hr {
   }
 }
 .-in-menu {
+  min-height: 100vh;
   max-height: 700px;
   overflow: hidden;
 }
