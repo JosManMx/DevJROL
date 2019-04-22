@@ -2,6 +2,9 @@
   <header class="header">
     <div class="header-container">
       <div class="header-content">
+        <div class="menu-toggle">
+          <span @click="$emit('menu-toggle')" class="menu-button">MENU</span>
+        </div>
         <h1 class="profile-name">{{profileName}}</h1>
         <p class="profile-profession">{{ profileProfession }}</p>
         <hr>

@@ -1,7 +1,7 @@
 <template>
-  <main class="main" id="app">
-    <navigation></navigation>
-    <header-app></header-app>
+  <main class="main" id="app" :class="{'-menu-active': menuIsShow}">
+    <navigation v-on:menu-toggle="menuToggle()"></navigation>
+    <header-app v-on:menu-toggle="menuToggle()"></header-app>
     <div class="view">
       <transition name="fade" mode="out-in">
         <router-view></router-view>
@@ -21,6 +21,24 @@ export default {
     HeaderApp,
     Navigation,
     Introduction
+  },
+  data() {
+    return {
+      menuIsShow: false
+    };
+  },
+  methods: {
+    menuToggle: function() {
+      if (screen.width < 768) {
+        this.menuIsShow = !this.menuIsShow;
+        let body = document.querySelector("body");
+        if (body.className == "") {
+          body.className = "-in-menu";
+        } else {
+          body.className = "";
+        }
+      }
+    }
   }
 };
 </script>
@@ -44,6 +62,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 
   &::-webkit-scrollbar {
     width: 1rem;
@@ -70,6 +89,19 @@ hr {
 .main {
   max-width: var(--max-width-containers);
   margin: auto;
+  transition: transform 0.4s ease-out;
+  &.-menu-active {
+    transform: translateX(var(--left-column-width));
+}
+  @include bp-up($xs) {
+    &.-menu-active {
+      transform: none;
+    }
+  }
+}
+.-in-menu {
+  max-height: 700px;
+  overflow: hidden;
 }
 
 .view {

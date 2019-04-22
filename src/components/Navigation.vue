@@ -1,11 +1,15 @@
 <template>
   <nav class="navigation">
+    <div class="menu-toggle">
+      <span @click="$emit('menu-toggle')" class="menu-button">MENU</span>
+    </div>
     <div class="profile-img">
       <!-- <img class="img" src="https://fakeimg.pl/220x270" alt> -->
       <img class="img" src="../assets/avatar-j-rafael-otero2.jpg" alt>
     </div>
+    <!-- <img class="img" src="https://fakeimg.pl/220x270" alt> -->
     <ul class="menu">
-      <li class="menu-item" :key="key" v-for="(item, key) in items">
+      <li class="menu-item" @click="$emit('menu-toggle')" :key="key" v-for="(item, key) in items">
         <router-link class="menu-link" active-class="active" :to="item.url" exact>{{ item.name }}</router-link>
       </li>
     </ul>
