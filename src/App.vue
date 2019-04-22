@@ -44,6 +44,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "sass/abstracts/variables";
+@import "sass/abstracts/mixins";
 // TODO concatenar luego
 @import url("https://fonts.googleapis.com/css?family=Lato|Nova+Square");
 // TODO Recfactorizar código CSS
@@ -92,7 +94,7 @@ hr {
   transition: transform 0.4s ease-out;
   &.-menu-active {
     transform: translateX(var(--left-column-width));
-}
+  }
   @include bp-up($xs) {
     &.-menu-active {
       transform: none;
@@ -105,32 +107,40 @@ hr {
 }
 
 .view {
-  margin-left: var(--left-column-width);
-  margin-top: 300px;
+  margin-bottom: 50px;
+  @include bp-up($xs) {
+    margin: 300px 0 50px var(--left-column-width);
+  }
 }
 .section {
+  padding: 0 20px;
   &-title {
     font-family: "Nova Square";
-    font-size: 24px;
+    font-size: 18px;
     font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.21;
-    letter-spacing: 28.8px;
     text-align: right;
     color: var(--brown);
     text-transform: uppercase;
-    margin: 0 -28.8px 40px 0;
     padding-bottom: 3px;
-    margin-right: -28.8px;
     position: relative;
     &::after {
       content: "";
       position: absolute;
-      width: calc(100% - 28.8px);
+      width: 100%;
       bottom: 0;
       left: 0;
       border-bottom: 1px solid var(--brown);
+    }
+  }
+  @include bp-up($xs) {
+    &-title {
+      font-size: 24px;
+      letter-spacing: 28.8px;
+      margin: 0 -28.8px 40px 0;
+      &::after {
+        width: calc(100% - 28.8px);
+      }
     }
   }
 }

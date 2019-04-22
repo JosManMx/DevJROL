@@ -4,10 +4,8 @@
       <span @click="$emit('menu-toggle')" class="menu-button">MENU</span>
     </div>
     <div class="profile-img">
-      <!-- <img class="img" src="https://fakeimg.pl/220x270" alt> -->
       <img class="img" src="../assets/avatar-j-rafael-otero2.jpg" alt>
     </div>
-    <!-- <img class="img" src="https://fakeimg.pl/220x270" alt> -->
     <ul class="menu">
       <li class="menu-item" @click="$emit('menu-toggle')" :key="key" v-for="(item, key) in items">
         <router-link class="menu-link" active-class="active" :to="item.url" exact>{{ item.name }}</router-link>
@@ -61,16 +59,24 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../sass/abstracts/variables";
+@import "../sass/abstracts/mixins";
 .navigation {
   position: fixed;
   top: 0;
-  min-height: 100vh;
+  right: 100%;
+  min-height: 700px;
+  min-width: var(--left-column-width);
   background: var(--brown);
   z-index: 2;
   padding: 0;
+  @include bp-up($xs) {
+    right: auto;
+    min-height: 100vh;
+  }
 }
 .profile-img {
-  padding: 20px 20px 0;
+  padding: 20px;
   display: flex;
   align-items: center;
   margin-bottom: 10px;
@@ -78,6 +84,9 @@ export default {
     border-radius: 5px;
     max-width: 90%;
     margin: auto;
+  }
+  @include bp-up($xs) {
+    padding: 20px 20px 0;
   }
 }
 .menu {
