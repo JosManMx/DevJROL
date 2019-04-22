@@ -43,10 +43,15 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../sass/abstracts/variables";
+@import "../sass/abstracts/mixins";
+
 .portfolio {
   &s {
-    display: flex;
-    justify-content: space-between;
+    @include bp-up($xs) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
   & {
     text-align: center;
@@ -56,12 +61,18 @@ export default {
   }
   &-image {
     margin-top: 10px;
-    width: 350px;
     border-radius: 4px;
     padding: 0.25em;
     border: 1px solid var(--brown-light);
+    margin: 20px 0;
     img {
       width: 100%;
+    }
+  }
+  @include bp-up($xs) {
+    &-image {
+      width: 350px;
+      margin: 10px 40px;
     }
   }
 }
