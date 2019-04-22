@@ -91,10 +91,93 @@ export default {
 
 
 <style lang="scss">
+@import "../sass/abstracts/variables";
+@import "../sass/abstracts/mixins";
+
+.nav-tabs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include bp-up($xs) {
+    margin-bottom: 30px;
+  }
+}
+.tab {
+  border: 1px solid var(--brown);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.4s;
+  margin-bottom: 1rem;
+  &s {
+    &__link {
+      font-size: 14px;
+      color: var(--brown);
+      text-align: center;
+      text-decoration: none;
+      font-weight: 300;
+    }
+  }
+  &.active {
+    background-color: var(--brown);
+    position: relative;
+    .tabs {
+      &__link {
+        color: var(--white);
+        .icon {
+          background-color: var(--white);
+        }
+      }
+    }
+  }
+  @include bp-up($xs) {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 0;
+    &s {
+      &__link {
+        font-size: 16px;
+      }
+    }
+    &.active {
+      &:after {
+        content: "";
+        width: 30px;
+        height: 30px;
+        border: 1px solid var(--brown);
+        border-width: 1px 1px 0 0;
+        background-color: var(--white);
+        background: linear-gradient(
+          45deg,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0) 49%,
+          rgba(255, 255, 255, 1) 50%,
+          rgba(255, 255, 255, 1) 100%
+        );
+        position: absolute;
+        bottom: -47px;
+        transform: rotate(-45deg);
+        cursor: initial;
+      }
+    }
+  }
+}
 .icon {
   display: inline-block;
-  height: 61px;
-  width: 70px;
+  height: 40px;
+  width: 50px;
   background-repeat: no-repeat;
   background-position: center center;
   background-color: var(--brown);
@@ -119,67 +202,9 @@ export default {
     -webkit-mask: url("../assets/icons/server.svg") no-repeat 50% 50%;
     mask: url("../assets/icons/server.svg") no-repeat 50% 50%;
   }
-}
-.nav-tabs {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  padding: 0;
-  margin-bottom: 30px;
-  .title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.tab {
-  border: 1px solid var(--brown);
-  border-radius: 50%;
-  width: 130px;
-  height: 130px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: background-color 0.4s;
-  &s {
-    &__link {
-      color: var(--brown);
-      text-align: center;
-      text-decoration: none;
-      font-weight: 300;
-    }
-  }
-  &.active {
-    background-color: var(--brown);
-    position: relative;
-    .tabs {
-      &__link {
-        color: var(--white);
-        .icon {
-          background-color: var(--white);
-        }
-      }
-    }
-    &:after {
-      content: "";
-      width: 30px;
-      height: 30px;
-      border: 1px solid var(--brown);
-      border-width: 1px 1px 0 0;
-      background-color: var(--white);
-      background: linear-gradient(
-        45deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0) 49%,
-        rgba(255, 255, 255, 1) 50%,
-        rgba(255, 255, 255, 1) 100%
-      );
-      position: absolute;
-      bottom: -47px;
-      transform: rotate(-45deg);
-      cursor: initial;
-    }
+  @include bp-up($xs) {
+    height: 61px;
+    width: 70px;
   }
 }
 .tab-content {
@@ -218,6 +243,13 @@ export default {
   &-chart {
     border: 1px solid var(--brown);
     height: 25px;
+    // TODO implement a chart responsive
+    &.progress-bar {
+      display: none;
+    }
+    @include bp-up($xs) {
+      display: inline-block;
+    }
   }
   &-percentage {
     margin: 0;

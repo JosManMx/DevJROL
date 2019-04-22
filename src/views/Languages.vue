@@ -64,6 +64,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../sass/abstracts/variables";
+@import "../sass/abstracts/mixins";
+
 .language {
   margin-bottom: 30px;
   &-label {
@@ -80,6 +83,13 @@ export default {
   &-chart {
     border: 1px solid var(--brown);
     height: 25px;
+    // TODO implement a chart responsive
+    &.progress-bar {
+      display: none;
+    }
+    @include bp-up($xs) {
+      display: inline-block;
+    }
   }
   &-percentage {
     margin: 0;
