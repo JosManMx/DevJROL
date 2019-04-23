@@ -144,5 +144,21 @@ export default {
     }
   }
 }
+@media screen and (max-height: 630px) and (min-width: $xs) {
+  .navigation {
+    .profile-img {
+      max-height: 41vh;
+      .img {
+        max-height: 41vh;
+      }
+    }
+  }
+  .menu {
+    &-link {
+      font-size: 3vh;
+      padding: 0.5vh;
+    }
+  }
+}
 </style>
 
