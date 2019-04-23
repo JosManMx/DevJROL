@@ -215,4 +215,29 @@ export default {
   display: flex;
   justify-content: flex-end;
 }
+@media screen and (max-height: 630px) and(min-width: $xs) {
+  .profile {
+    &-name {
+      margin-bottom: 0.5vh;
+      font-size: 5vh;
+    }
+    &-profession {
+      margin-bottom: 15px;
+      font-size: 3vh;
+    }
+  }
+  .social {
+    &-icon {
+      width: 6vh;
+      height: 6vh;
+      font-size: 4vh;
+      margin-right: 3vh;
+    }
+    &-whatsapp {
+      .whatsapp-number {
+        font-size: 4vh;
+      }
+    }
+  }
+}
 </style>

@@ -112,6 +112,9 @@ hr {
   margin-bottom: 50px;
   @include bp-up($xs) {
     margin: 300px 0 50px var(--left-column-width);
+    @media screen and (max-height: 630px) {
+      margin-top: 50vh;
+    }
   }
 }
 .section {
