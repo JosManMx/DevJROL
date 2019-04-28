@@ -2,8 +2,9 @@
 <html>
 
   <head lang="es">
-    <link rel="shortcut icon" href="https://fakeimg.pl/10" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <title>Dev J Rafael Otero</title>
+    <link rel="manifest" href="/manifest.json">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -49,6 +50,13 @@
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
 
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js')
+          .then(reg => console.log('Registro de SW exitoso', reg))
+          .catch(err => console.warn('Error al tratar de registrar el sw', err))
+      }
+    </script>
     <script src="/dist/build.js"></script>
 
   </body>

@@ -1,0 +1,31 @@
+{
+  "short_name": "devjrafaelotero",
+  "name": "CV Dev J Rafael Otero",
+  "icons": [
+    {
+      "src": "images/favicon.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "images/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/icon-256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "images/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "./",
+  "background_color": "#ededed",
+  "display": "standalone",
+  "scope": "./",
+  "theme_color": "#545454"
+}
