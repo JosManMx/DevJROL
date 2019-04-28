@@ -47,7 +47,8 @@ export default {
 @import "sass/abstracts/variables";
 @import "sass/abstracts/mixins";
 // TODO concatenar luego
-@import url("https://fonts.googleapis.com/css?family=Lato|Nova+Square");
+// @import url("https://fonts.googleapis.com/css?family=Lato|Nova+Square");
+@import url("./assets/fonts/fonts.scss");
 // TODO Recfactorizar código CSS
 :root {
   --white: #ffffff;
