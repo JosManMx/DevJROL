@@ -57,6 +57,14 @@ export const KNOWLEDGES = {
     {
       name: "Laravel",
       level: "60"
+    },
+    {
+      name: "SQL",
+      level: "70"
+    },
+    {
+      name: "Postgres",
+      level: "60"
     }
   ],
   sysadmin: [
