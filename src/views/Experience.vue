@@ -50,9 +50,9 @@ export default {
         {
           company: "JosTechS - Soluciones Tecnológicas",
           position: "CEO / Founder",
-          duration: "Febrero 2014 - actualidad (5 años y 3 meses)",
+          duration: "Diciembre 2016 - actualidad (2 años y 6 meses)",
           technologies:
-            "HTML, CSS, JavaScript, Jquery, PHP, PHP-Symfony, Prestashop, Git, MySQL",
+            "HTML, PUG, CSS, SASS, Gulp, Wepack, JavaScript, Jquery, PHP, Wordpress, Prestashop, Magento, Git, MySQL, VueJS, ReactJS, NodeJS, Apache2, Linux, Adobe Xd, Adobe Photoshop, Figma",
           image: "/src/assets/experiences/jostech.png"
         },
         {
@@ -60,7 +60,7 @@ export default {
           position: "Desarrollador web Front-End",
           duration: "Junio 2016 - Noviembre 2017 (1 año 6 meses)",
           technologies:
-            "HTML, CSS, JavaScript, Jquery, PHP, PHP-Symfony, Prestashop, Git, MySQL",
+            "HTML, CSS, JavaScript, Jquery, Foundation Ink, PHP-Laravel (Blade), Git, MySQL",
           image: "/src/assets/experiences/oteroweb.png"
         }
       ]
